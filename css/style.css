@@ -1,0 +1,347 @@
+/* CSS RESET & BASIC VARIABLE DECLERATIONS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu-Bold";
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../assets/fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../assets/fonts/Ubuntu-Light.ttf");
+}
+:root {
+  --primary-color: #121212;
+  --secondary-color: #1f1f1f;
+  --header-color: #101010;
+  --background-color: #000;
+  --hover-color: #b3b3b3;
+  --blur-color: #6969697c;
+  --text-color: #efefef;
+  --button-color: #3be377;
+  --card-background: #1f1f1f;
+  --card-background-hover: #252525;
+  --radius-value: 8px;
+  --transition-duration: 80ms;
+  --playbar-color: #a4d754ed;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+/* ScrollBar Designing */
+
+#contentSection::-webkit-scrollbar {
+  display: none;
+}
+/* Right Sided Section Styling */
+
+#propertiesSection {
+  height: calc(100vh - 24px);
+  width: 22vw;
+  margin: 8px 0 8px 8px;
+  position: relative;
+}
+#homeSection {
+  height: 18%;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-value);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px 0;
+}
+#brandMark {
+  cursor: pointer;
+}
+#brandLogo {
+  margin-right: 5px;
+}
+#registeredMark {
+  font-size: 6px;
+  position: relative;
+  bottom: 5px;
+}
+#searchRow {
+  transition-duration: 400ms;
+}
+#searchBtn {
+  color: var(--hover-color);
+}
+#searchRow:hover,
+#libraryBtnSection:hover {
+  filter: brightness(150%);
+}
+#librarySection {
+  height: 82%;
+  margin-top: 8px;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-value);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#LibraryRow {
+  width: 100%;
+  margin: 10px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 22px;
+  transition-duration: 400ms;
+}
+#libraryBtnSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--hover-color);
+  transition-duration: 400ms;
+}
+#plusIconBackground {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 400ms;
+}
+#plusIconBackground:hover {
+  background-color: var(--blur-color);
+  filter: brightness(120%);
+}
+#plusIcon {
+  fill: yellowgreen;
+  transition-duration: 400ms;
+}
+#playlistCard,
+#podcastCard {
+  background-color: var(--secondary-color);
+  border-radius: var(--radius-value);
+  width: 96%;
+  padding: 10px calc(22vw - 96%);
+}
+#playlistCard {
+  margin-bottom: 20px;
+}
+#playlistCardHeading,
+#podcastCardHeading {
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-size: 700;
+}
+#playlistCardInfo,
+#podcastCardInfo {
+  font-size: 14px;
+  margin-bottom: 25px;
+  font-family: "Ubuntu-Light";
+}
+#createPlaylistBtn,
+#createPodcastBtn {
+  background-color: var(--text-color);
+  border: none;
+  padding: 8px 15px;
+  font-weight: 700;
+  font-family: "Ubuntu-Bold";
+  border-radius: 100px;
+  cursor: pointer;
+}
+#createPlaylistBtn:hover,
+#createPodcastBtn:hover {
+  transform: scale(1.04);
+}
+#leftFooter {
+  font-size: 11px;
+  align-self: flex-start;
+  margin: 0 8px;
+  position: absolute;
+  bottom: 0;
+  padding: 0 calc(22vw - 96%);
+}
+#leftFooter a {
+  color: var(--hover-color);
+  margin: 0 20px 0 0;
+  line-height: 30px;
+}
+#languageBtn {
+  margin: 30px 0;
+  padding: 6px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: 1px solid var(--text-color);
+  border-radius: 100px;
+  color: var(--text-color);
+  font-size: 14px;
+}
+#languageBtn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  outline: 2px solid var(--text-color);
+}
+#globeIcon {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* Left Sided Section Styling */
+
+#contentSection {
+  background-color: var(--primary-color);
+  height: calc(100vh - 16px);
+  width: 78vw;
+  margin: 8px 8px 8px 0;
+  border-radius: var(--radius-value);
+  overflow-y: auto;
+}
+#header {
+  background-color: var(--header-color);
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+#albumsSection {
+  margin-top: 20px;
+}
+#navigationControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hamburgerIcon {
+  margin-right: 20px;
+  cursor: pointer;
+  transition-duration: 150ms;
+  display: none;
+}
+#hamburgerIcon:hover {
+  filter: brightness(150%);
+}
+#backBtn {
+  margin: 0 20px 0 0;
+}
+#backBtn,
+#forwardBtn {
+  cursor: not-allowed;
+}
+#userIdBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#loginBtn,
+#signUpBtn {
+  color: var(--header-color);
+  margin: 0 6px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+#loginBtn {
+  background-color: var(--text-color);
+  border-radius: 100px;
+}
+#signUpBtn {
+  color: var(--hover-color);
+}
+#loginBtn:hover {
+  transform: scale(1.04);
+  filter: brightness(95%);
+}
+#signUpBtn:hover {
+  transform: scale(1.04);
+  color: var(--text-color);
+}
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 25px 0 25px;
+}
+#links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#socialMediaLinks {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  width: 150px;
+}
+#hrContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#copyrightStatement {
+  color: var(--hover-color);
+  font-family: "Ubuntu-Light";
+  margin: 0 0 50px 25px;
+}
+#playbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--playbar-color);
+  position: sticky;
+  bottom: 20px;
+  margin: 0 25px;
+  padding: 5px 15px;
+  border-radius: var(--radius-value);
+}
+#playbarControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styling Seekbar */
+
+#playbarSeekbars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#playSeekbar {
+  background-color: #f5f5f5;
+  width: 90%;
+  cursor: pointer;
+}
+#contentRange {
+  height: 100%;
+  width: 0;
+  max-width: 100%;
+  border-radius: 100px;
+  background-color: #800080;
+  transition: width 400ms;
+}
+#volumeSeekbar {
+  background-color: #ffe2f4;
+  width: 10%;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+#volumeRange {
+  background-color: #0083ee;
+  width: 0;
+  height: 100%;
+  border-radius: 100px;
+}

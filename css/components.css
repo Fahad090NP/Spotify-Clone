@@ -1,0 +1,10 @@
+.playing-card{
+    background-color: rgb(63, 63, 63);
+}
+
+#close-btn{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

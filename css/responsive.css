@@ -1,0 +1,174 @@
+/* Common Styles */
+
+#contentSection {
+  width: 100vw;
+  margin: 8px;
+}
+.cardsContainer {
+  display: grid;
+  gap: 16px;
+}
+#hamburger-icon {
+  display: none;
+  margin-right: 20px;
+}
+#plusIcon {
+  display: block;
+}
+
+/* Dealing with Width of Document */
+
+@media screen and (max-width: 1500px) {
+  .cardsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1250px) {
+  #propertiesSection {
+    transition-duration: 1s;
+    transform: translateX(-200%);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1100px) {
+  #plusIcon {
+    display: none;
+  }
+  #socialMediaLinks {
+    display: none;
+  }
+  #contentSection {
+    margin: 8px 8px 0;
+  }
+}
+@media screen and (max-width: 630px) {
+  .cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .links,
+  .linksContainer,
+  .footerLink,
+  .linksHeading {
+    display: none;
+  }
+  .cardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #copyrightStatement {
+    text-align: center;
+  }
+  #header {
+    padding: 0 25px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navigationControls {
+    width: 100vw;
+  }
+  .navigationBtns {
+    display: none;
+  }
+  .playbarControlButton {
+    height: 30px;
+  }
+  .cardTitle {
+    font-size: 16px;
+  }
+  #propertiesSection {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+  }
+  #albumHeadingLink {
+    font-size: 22px;
+  }
+  #header {
+    display: flex;
+  }
+  #signUpBtn {
+    padding: 0;
+  }
+  #loginBtn {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  #playSeekbar {
+    width: 75%;
+  }
+  #volumeSeekbar {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #userIdBtns {
+    font-size: 14px;
+  }
+  #albumHeadingLink {
+    font-size: 20px;
+  }
+  .cardTitle {
+    font-size: 14px;
+  }
+  .contentLength {
+    font-size: 14px;
+  }
+  .playbarControlButton {
+    height: 25px;
+  }
+}
+@media screen and (max-width: 300px) {
+  #userIdBtns {
+    font-size: 13px;
+  }
+  .cardTitle {
+    font-size: 13px;
+  }
+  .contentLength {
+    font-size: 13px;
+  }
+  .playbarControlButton {
+    height: 20px;
+  }
+}
+
+/* Dealing with Height of Document */
+
+@media screen and (max-height: 730px) {
+  #leftFooter {
+    display: none;
+  }
+  #contentSection {
+    margin: 0;
+  }
+  #playbar {
+    bottom: 50px;
+  }
+}
+@media screen and (max-height: 820px) {
+  #copyrightStatement {
+    display: none;
+  }
+  #copyrightStatement {
+    display: none;
+  }
+  #hrContainer {
+    display: none;
+  }
+  #albumsSection {
+    padding-bottom: 35px;
+  }
+}

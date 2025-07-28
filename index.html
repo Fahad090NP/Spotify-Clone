@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Left Side Section -->
+    <section id="propertiesSection">
+      <img src="./assets/icons/close.svg" id="close-btn" />
+      <div id="homeSection" class="sectionCards">
+        <div id="brandMark" class="flex-row" title="Spotify">
+          <img src="./assets/branding/logo.png" class="icon" id="brandLogo" />
+          <h1 id="brandName">Spotify<span id="registeredMark">&reg;</span></h1>
+        </div>
+        <div id="homeRow" class="flex-row">
+          <img
+            src="./assets/icons/home.svg"
+            class="icon homeIcons"
+            id="homeIcon"
+          />
+          <a href="#" id="homeBtn">Home</a>
+        </div>
+        <div id="searchRow" class="flex-row">
+          <img
+            src="./assets/icons/search.svg"
+            class="icon homeIcons"
+            id="seacrhIcon"
+          />
+          <a href="#" id="searchBtn">Search</a>
+        </div>
+      </div>
+      <div id="librarySection" class="sectionCards">
+        <div id="LibraryRow" class="flex-row">
+          <div id="libraryBtnSection">
+            <img
+              src="./assets/icons/library.svg"
+              class="icon"
+              id="libraryIcon"
+            />
+            <h3 id="libraryBtn">Your Library</h3>
+          </div>
+          <div id="plusIconBackground">
+            <img src="./assets/icons/plus.svg" class="icon" id="plusIcon" />
+          </div>
+        </div>
+        <div id="playlistCard">
+          <h2 id="playlistCardHeading">Create your first playlist</h2>
+          <p id="playlistCardInfo">It's easy, we'll help you</p>
+          <button id="createPlaylistBtn">Create Playlist</button>
+        </div>
+        <div id="podcastCard">
+          <h2 id="podcastCardHeading">Let's find some podcasts to follow</h2>
+          <p id="podcastCardInfo">We'll keep you updated on new episodes</p>
+          <button id="createPodcastBtn">Browse Podcasts</button>
+        </div>
+        <div id="leftFooter">
+          <div id="legal">
+            <a href="#">Legal</a><a href="#">Safety & Privacy Center</a
+            ><a href="#">Privacy Policy</a><a href="#">Cookies</a>
+          </div>
+          <div id="about">
+            <a href="#">About Ads</a><a href="#">Accessibility</a>
+          </div>
+          <div id="cookies"><a href="#">cookies</a></div>
+          <button id="languageBtn">
+            <img src="./assets/icons/globe.svg" id="globeIcon" />English
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Right Side Section -->
+    <section id="contentSection">
+      <nav id="header">
+        <div id="navigationControls">
+          <img src="./assets/icons/hamburger.svg" id="hamburger-icon" />
+          <img
+            src="./assets/icons/back.svg"
+            class="navigationBtns"
+            id="backBtn"
+          />
+          <img
+            src="./assets/icons/forward.svg"
+            class="navigationBtns"
+            id="forwardBtn"
+          />
+        </div>
+        <div id="userIdBtns">
+          <div id="signUpBtn">SignUp</div>
+          <div id="loginBtn">Login</div>
+        </div>
+      </nav>
+      <main id="albumsSection">
+        <div class="albumSection">
+          <h3 class="albumHeading">
+            <a href="#" id="albumHeadingLink">All Content</a>
+          </h3>
+          <div class="cardsContainer">
+            <div class="card">
+              <img src="./assets/icons/music.svg" class="cardImage" />
+              <h2 class="cardTitle"></h2>
+              <a href="" class="cardPath"></a>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div id="links">
+            <div class="linksContainer" id="companyLinks">
+              <h2 class="linksHeading">Company</h2>
+              <a href="#" class="footerLink">About</a>
+              <a href="#" class="footerLink">Jobs</a>
+              <a href="#" class="footerLink">For the Record</a>
+            </div>
+            <div class="linksContainer" id="communityLinks">
+              <h2 class="linksHeading">Community</h2>
+              <a href="#" class="footerLink">For Artists</a>
+              <a href="#" class="footerLink">Developers</a>
+              <a href="#" class="footerLink">Advertising</a>
+              <a href="#" class="footerLink">Investors</a>
+              <a href="#" class="footerLink">Vendors</a>
+            </div>
+            <div class="linksContainer" id="usefulLinks">
+              <h2 class="linksHeading">Useful Links</h2>
+              <a href="#" class="footerLink">Support</a>
+              <a href="#" class="footerLink">Free Mobile App</a>
+            </div>
+            <div class="linksContainer" id="spotifyPlansLinks">
+              <h2 class="linksHeading">Spotify Plans</h2>
+              <a href="#" class="footerLink">Premium Indivisual</a>
+              <a href="#" class="footerLink">Premium Duo</a>
+              <a href="#" class="footerLink">Premium Family</a>
+              <a href="#" class="footerLink">Premium Student</a>
+              <a href="#" class="footerLink">Spotify Free</a>
+            </div>
+            <div id="socialMediaLinks">
+              <a href="#" class="socialMediaIconBackground">
+                <img
+                  src="./assets/icons/instagram.svg"
+                  class="socialMediaIcon"
+                />
+              </a>
+              <a href="#" class="socialMediaIconBackground">
+                <img src="./assets/icons/twitter.svg" class="socialMediaIcon" />
+              </a>
+              <a href="#" class="socialMediaIconBackground">
+                <img
+                  src="./assets/icons/facebook.svg"
+                  class="socialMediaIcon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div id="hrContainer">
+        <hr />
+      </div>
+      <div id="copyrightStatement">&copy; 2024 Spotify AB</div>
+      <div id="playbar">
+        <div id="playbarControls">
+          <span class="contentLength elapsedTime">00:00</span>
+          <div id="playbarControlButtons">
+            <img
+              src="./assets/icons/previous.png"
+              class="playbarControlButton prevBtn"
+            />
+            <img
+              src="./assets/icons/play.png"
+              class="playbarControlButton playPauseBtn"
+            />
+            <img
+              src="./assets/icons/next.png"
+              class="playbarControlButton nextBtn"
+            />
+          </div>
+          <span class="contentLength totalTime">00:00</span>
+        </div>
+        <div id="playbarSeekbars">
+          <div class="seekbars" id="playSeekbar">
+            <div id="contentRange"></div>
+          </div>
+          <div id="volumeSeekbar">
+            <div id="volumeRange"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/script.js"></script>
+</html>

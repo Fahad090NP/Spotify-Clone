@@ -1,0 +1,150 @@
+/* Selection of Elements Based on Tag Names */
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+h1,
+h3 {
+  font-size: 18px;
+}
+hr {
+  border: 1px solid var(--secondary-color);
+  margin: 50px 0;
+  width: 96%;
+}
+
+/* Selection of Elements Based on Class Names */
+
+.icon {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.flex-row {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0 22px;
+}
+.homeIcons,
+#libraryIcon {
+  margin-right: 20px;
+}
+#albumHeadingLink {
+  font-size: 24px;
+}
+#albumHeadingLink:hover {
+  text-decoration: underline;
+}
+.albumHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+}
+.footerLink {
+  font-family: "Ubuntu-Light";
+  margin-bottom: 7px;
+  color: var(--hover-color);
+  transition-duration: 80ms;
+}
+.footerLink:hover {
+  color: var(--text-color);
+  text-underline-offset: 2px;
+  text-decoration: underline;
+}
+.linksHeading {
+  margin-bottom: 10px;
+}
+.socialMediaIcon {
+  height: 20px;
+  width: 20px;
+}
+.socialMediaIconBackground {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  border-radius: 50%;
+  align-items: center;
+  background-color: var(--secondary-color);
+  cursor: context-menu;
+  transition-duration: 80ms;
+}
+.socialMediaIconBackground:hover {
+  background-color: #3b3b3b;
+}
+.linksHeading,
+.socialMediaIcon {
+  font-size: 16px;
+}
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 25px 25px 0 25px;
+  overflow-y: scroll;
+}
+.cardsContainer::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  background-color: var(--card-background);
+  height: 100px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.card:hover {
+  filter: brightness(90%);
+}
+.card:hover .cardImage {
+  filter: brightness(110%);
+  transform: rotate(5deg);
+}
+.cardImage {
+  height: 50px;
+  object-fit: cover;
+  align-self: center;
+  margin: 10px;
+  border-radius: 8px;
+  transition-duration: 200ms;
+}
+.madinaImg {
+  object-position: center right;
+}
+.cardImage:hover {
+  filter: brightness(105%);
+}
+.cardTitle {
+  font-family: "Ubuntu-Light";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  align-self: center;
+  overflow: hidden;
+}
+.playbarControlButton {
+  height: 30px;
+  margin: 6px 6px;
+  cursor: pointer;
+}
+.contentLength {
+  color: black;
+  cursor: context-menu;
+}
+.seekbars {
+  height: 6px;
+  margin: 10px 5px;
+  border-radius: 100px;
+}
+.cardPath {
+  display: none;
+}
